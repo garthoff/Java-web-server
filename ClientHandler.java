@@ -64,7 +64,7 @@ public class ClientHandler extends Thread{
 	}
 	protected void error500(PrintWriter out){
 		out.println("HTTP/1.0 200 OK\nContent-Type: text/html\nServer: Bot\n");
-		out.println("<html>\n<head>\n<title>500 not found</title>\n</head>\n<body>"
+		out.println("<html>\n<head>\n<title>500 internal server error</title>\n</head>\n<body>"
 		+"\n<h1>\nError 500 internal server error\n</h1>\n</body>\n</html>");
 		out.flush();	
 	}
